@@ -1,13 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
-const Chlid = styled.span`
+const Child = styled.span`
   font-size: 15px;
 `;
 
 const Wrapper = styled.div`
   display: flex;
 
-  ${Chlid}:hover {
+  ${Child}:hover {
     font-size: 20px;
   }
 `;
@@ -40,7 +40,7 @@ const Input = styled.input.attrs({ required: true })`
 const ThemeWrapper = styled.div`
   background: ${(props) => props.theme.backgroundColor};
 `;
-const ThemeChlid = styled.span`
+const ThemeChild = styled.span`
   color: ${(props) => props.theme.textColor};
 `;
 
@@ -91,11 +91,11 @@ function StyledComponents() {
       </Wrapper>
 
       <Wrapper>
-        <Chlid>This is normal span!</Chlid>
+        <Child>This is normal span!</Child>
       </Wrapper>
 
       <ThemeWrapper>
-        <ThemeChlid>Text</ThemeChlid>
+        <ThemeChild>Text</ThemeChild>
       </ThemeWrapper>
     </>
   );
